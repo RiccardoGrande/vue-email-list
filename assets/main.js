@@ -17,7 +17,7 @@ createApp({
         console.log(response); 
 
         this.mails.push({
-          
+          [this.mails]:value
         })
        
       })
