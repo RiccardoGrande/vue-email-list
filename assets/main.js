@@ -3,8 +3,8 @@ createApp({
   data() {
     return {
       url: "https://flynn.boolean.careers/exercises/api/random/mail",
-      mails: null,
-      activeMail: 0
+      emails: [],
+      
       
     }
   }, 
@@ -17,10 +17,7 @@ createApp({
        
         console.log(response); 
 
-        this.mails[this.activeMail].push({
-
-          response: url
-        })
+        this.emails.push(response.data.response)
        
       })
       
